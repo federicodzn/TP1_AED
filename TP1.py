@@ -12,12 +12,12 @@ else:
     es_patente_valida = False
 
 # Cálculo del importe básico
-if pais == 1:
-    importe_base = 400
-elif pais == 2:
+if pais == 0 or 3 or 4:
+    importe_base = 300
+elif pais == 1:
     importe_base = 200
 else:
-    importe_base = 300
+    importe_base = 400
 
 if tipo_vehiculo == 0:
     importe_base *= 0.5
