@@ -9,19 +9,19 @@ print()
 # Validación de la patente
 if len(patente) == 7:
     if patente[:2].isalpha() and patente[2:5].isdigit() and patente[5:].isalpha():
-        print("El auto corresponde a el pais Argentina")
+        print("El vehículo corresponde a el país de Argentina")
     elif patente[:3].isalpha() and patente[3:].isdigit():
-        print("El auto corresponde a el pais Uruguay")
+        print("El vehículo corresponde a el país de Uruguay")
     elif patente[:2].isalpha() and patente[2:].isdigit():
-        print("El auto corresponde a el pais Bolivia")
+        print("El vehículo corresponde a el país de Bolivia")
     elif patente[:4].isalpha() and patente[4:].isdigit():
-        print("El auto corresponde a el pais Paraguay")
+        print("El vehículo corresponde a el país de Paraguay")
     elif patente[:3].isalpha() and patente[3:4].isdigit() and patente[4:5].isalpha() and patente[5:].isdigit():
-        print("El auto corresponde a el pais Brasil")
+        print("El vehículo corresponde a el país de Brasil")
     else:
-        print("El vehículo es de Otro pais")
+        print("El vehículo es de otro país")
 else:
-    print("El vehículo es de Otro pais")
+    print("El vehículo es de otro país")
 
 # Cálculo del importe básico
 if pais == 2:
@@ -51,4 +51,4 @@ if distancia != 0:
     valor_promedio_por_kilometro = round(importe_final / distancia, 2)
     print("El valor promedio pagado por kilómetro recorrido es:", valor_promedio_por_kilometro)
 else:
-    print("No aplica el calculo del promedio porque los kilometros recorridos son 0")
+    print("No aplica el cálculo del promedio porque los kilometros recorridos son 0")
